@@ -1,0 +1,196 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_column="2"
+    android:background="#FFF"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.cmpe295b.CompensationActivity"
+    android:nestedScrollingEnabled="true">
+
+    <!--TableRow
+        android:id="@+id/tableRow0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:nestedScrollingEnabled="false">
+
+        <TextView
+            android:id="@+id/textView00"
+            android:text="Compensation"
+            android:layout_span="2"
+            android:textColor="#000"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </TableRow-->
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/tableRow0"
+        android:layout_marginTop="4dp"
+        android:background="#FFFFFF" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:nestedScrollingEnabled="false">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:text="Band"
+            android:textColor="#000"
+            android:background="@drawable/round"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:id="@+id/textView12"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/round"
+            android:text=""
+             />
+
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        >
+        <TextView
+            android:id="@+id/textView21"
+            android:text="Frequency"
+            android:background="@drawable/round"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_height="wrap_content"
+            style="@style/textColor" />
+
+
+        <TextView
+            android:id="@+id/textView22"
+            android:text=""
+            android:gravity="center"
+            android:padding="5dp"
+            android:background="@drawable/round"
+            android:layout_marginLeft="20dp"
+            style="@style/textColor"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:id="@+id/textView31"
+            android:text="Currency"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="center"
+            android:padding="5dp"
+            android:background="@drawable/round"
+            style="@style/textColor" />
+
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="center"
+            android:background="@drawable/round"
+            android:layout_marginLeft="20dp"
+            style="@style/textColor"
+            android:text=""/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:id="@+id/textView41"
+            android:text="Location"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/round"
+            style="@style/textColor" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="center"
+            android:padding="5dp"
+            android:background="@drawable/round"
+            android:layout_marginLeft="20dp"
+            style="@style/textColor"
+            android:text="" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:id="@+id/textView51"
+            android:text="Total Base Pay"
+            android:gravity="center"
+            android:padding="5dp"
+            android:background="@drawable/round"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            style="@style/textColor" />
+
+
+        <TextView
+            android:id="@+id/textView52"
+            android:text=""
+            android:gravity="center"
+            android:padding="5dp"
+            android:background="@drawable/round"
+            style="@style/textColor"
+            android:layout_marginLeft="20dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:id="@+id/textView61"
+            android:text="Total Compensation"
+            android:gravity="center"
+            android:padding="5dp"
+            android:background="@drawable/round"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            style="@style/textColor"
+            android:layout_width="@dimen/abc_action_bar_icon_vertical_padding_material" />
+
+        <TextView
+            android:id="@+id/textView62"
+            android:text=""
+            android:gravity="center"
+            android:padding="5dp"
+            style="@style/textColor"
+            android:background="@drawable/round"
+            android:layout_marginLeft="20dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </TableRow>
+</TableLayout>

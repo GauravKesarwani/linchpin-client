@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dirLayout"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    >
+    <TextView
+        android:id="@+id/label_horlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:background="@drawable/round"
+        android:gravity="center"
+        android:text=""
+        style="@style/textColor" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/leftarrow"
+            android:background="@drawable/left_arrow2"/>
+        <com.gayathri.enterpriselinchpin.gaurav.utils.HorizontalListView
+            android:id="@+id/listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/leftarrow"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/listview"
+            android:id="@+id/rightarrow"
+            android:background="@drawable/right_arrow"/>
+    </RelativeLayout>
+</LinearLayout>

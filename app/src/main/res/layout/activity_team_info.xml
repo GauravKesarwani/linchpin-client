@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/label_teamSize"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+        android:text="Team Size"
+        style="@style/CodeFont" />
+
+    <LinearLayout
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:background="@drawable/team_size"
+        android:id="@+id/teamSize"
+        android:orientation="horizontal"
+        android:layout_alignTop="@+id/label_teamSize"
+        android:layout_alignRight="@+id/list_team"
+        android:layout_alignEnd="@+id/list_team"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="41dp" >
+
+        <TextView
+            android:id="@+id/teamSizeCount"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#E8E8E8"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:text=""
+            android:textSize="30sp"
+            android:textColor="#000000">
+        </TextView>
+    </LinearLayout>
+
+    <View
+       android:layout_width="fill_parent"
+       android:layout_height="1dip"
+       android:layout_below="@+id/teamSize"
+       android:layout_marginTop="4dp"
+       android:background="#E0E0E0" />
+
+    <TextView
+        android:id="@+id/label_Manager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teamSize"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="4dp"
+        android:layout_alignTop="@+id/managerPic"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Manager"
+        style="@style/CodeFont"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/profile"
+        android:id="@+id/managerPic"
+        android:layout_below="@+id/label_teamSize"
+        android:layout_alignRight="@+id/teamSize"
+        android:layout_alignEnd="@+id/teamSize"
+        android:layout_alignLeft="@+id/teamSize"
+        android:layout_alignStart="@+id/teamSize" />
+
+    <TextView
+        android:id="@+id/label_teamMembers"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Team Members"
+        android:background="@drawable/round"
+        style="@style/CodeFont"
+        android:layout_below="@+id/managerPic"
+       />
+
+    <ListView
+        android:id="@+id/list_team"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_teamMembers"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:touchscreenBlocksFocus="false"
+        android:background="@android:drawable/divider_horizontal_dim_dark">
+    </ListView>
+
+</RelativeLayout>

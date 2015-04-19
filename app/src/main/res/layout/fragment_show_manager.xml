@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:background="#fff"
+    >
+
+<View
+    android:id="@+id/hr"
+    android:layout_width="fill_parent"
+    android:layout_height="2dip"
+    android:background="#E8E8E8" />
+
+<ImageView
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:id="@+id/managerImg"
+    android:layout_below="@+id/hr"
+    android:layout_marginTop="4dp"/>
+
+<TextView
+    android:id="@+id/empID"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:textStyle="bold"
+    android:layout_toRightOf="@+id/managerImg"/>
+<TextView
+    android:id="@+id/name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:textStyle="bold"
+    android:layout_below="@+id/empID"
+    android:layout_toRightOf="@+id/managerImg"/>
+
+<TextView
+    android:id="@+id/empDesg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:textStyle="bold"
+    android:layout_toRightOf="@+id/managerImg"
+    android:layout_below="@+id/name"/>
+
+<TextView
+    android:id="@+id/empBand"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:textStyle="bold"
+    android:layout_toRightOf="@+id/managerImg"
+    android:layout_below="@+id/empDesg"/>
+
+<Button
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/managerImg"
+    android:layout_marginTop="10dp"
+    android:gravity="center"
+    android:clickable="true"
+    android:text="Advanced Search"
+    android:onClick="advancedSearch"/>
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gayathri.enterpriselinchpin" >
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="21" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver
+            android:name=".MessageReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.cmpe.snapchat" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".MessageReceiverService" />
+
+        <activity
+            android:name=".NavigationActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MessageActivity"
+            android:label="@string/title_activity_message" >
+        </activity>
+
+        <service
+            android:name=".SendMessageService"
+            android:exported="false" >
+        </service>
+
+        <activity
+            android:name=".gaurav.Profile"
+            android:label="@string/title_activity_profile" >
+        </activity>
+        <activity
+            android:name=".gaurav.LeaveRequest"
+            android:label="@string/title_activity_leave_request" >
+        </activity>
+        <activity
+            android:name=".gaurav.CompensationActivity"
+            android:label="@string/title_activity_compensation" >
+        </activity>
+        <activity
+            android:name=".gaurav.TeamInfoActivity"
+            android:label="@string/title_activity_team_info" >
+        </activity>
+        <activity
+            android:name=".gaurav.ExperienceActivity"
+            android:label="@string/title_activity_experience" >
+        </activity>
+        <activity
+            android:name=".gaurav.PerformanceActivity"
+            android:label="@string/title_activity_performance" >
+        </activity>
+        <activity
+            android:name=".gaurav.DirectoryActivity"
+            android:label="@string/title_activity_directory" >
+
+        </activity>
+        <activity
+            android:name=".gaurav.SearchDirectoryActivity"
+            android:label="@string/title_activity_search_directory" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable"
+                android:value=".activities.SearchDirectoryActivity"/>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EnterpriseLinchpin2</string>
+    <string name="title_section1">Messaging</string>
+    <string name="title_section2">Profile</string>
+    <string name="title_section3">Team Info</string>
+    <string name="title_section4">Experience and Job History</string>
+    <string name="title_section5">Compensation</string>
+    <string name="title_section6">Talent and Performance</string>
+    <string name="title_section7">Directory</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">Enterprise Linchpin</string>le
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_message">MessageActivity</string>
+
+    <string name="btn_home_phone">Home</string>
+    <string name="btn_work_email">Work</string>
+    <string name="btn_add_info">Additional Contact Info...</string>
+    <string name="show_profile">Show Profile</string>
+
+
+    <!-- Search Menu Strings For Directory Activity -->
+    <string name="search_title">Search Title</string>
+    <string name="search_hint">Search Hint</string>
+
+    <!-- Search Strings for Search Activity -->
+    <string name="Department">Engineering</string>
+    <string name="Band">Band</string>
+    <string name="Search">Search</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item >Home</item>
+        <item >Find People</item>
+        <item >Photos</item>
+        <item >Communities</item>
+        <item >Pages</item>
+        <item >What\'s Hot</item>
+    </string-array>
+
+    <string-array name="navigation_items">
+        <item>Experience</item>
+        <item>Job</item>
+        <item>Leave Request</item>
+        <item>Compensation</item>
+    </string-array>
+
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_compensation">Compensation</string>
+    <string name="title_activity_leave_request">LeaveRequest</string>
+    <string name="title_activity_team_info">TeamInfoActivity</string>
+    <string name="title_activity_experience">ExperienceActivity</string>
+    <string name="title_activity_performance">PerformanceActivity</string>
+    <string name="ipaddress">http://linode.foamsnet.com:8001/linchpin/</string>
+    <string name="title_activity_directory">DirectoryActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_search_directory">SearchDirectoryActivity</string>
+    <string name="ipaddress1">http://192.168.1.17:8000/linchpin/</string>
+
+</resources>
